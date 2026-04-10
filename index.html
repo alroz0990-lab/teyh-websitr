@@ -3,46 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تِيـه | TEYH - إختفِ لتجد نفسك</title>
+    <title>تِيـه | TEYH</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'IBM Plex Sans Arabic', sans-serif; background-color: #000; color: #fff; }
-        .package-card { transition: 0.4s; border: 1px solid #333; cursor: pointer; text-decoration: none; display: block; }
-        .package-card:hover { transform: translateY(-10px); border-color: #fff; }
+        body { background-color: #000; color: #fff; font-family: sans-serif; }
+        .package-card { transition: 0.4s; border: 1px solid #333; display: block; text-decoration: none; color: inherit; }
+        .package-card:hover { transform: translateY(-10px); border-color: #fff; box-shadow: 0 0 20px rgba(255,255,255,0.1); }
     </style>
 </head>
 <body>
-
     <div class="container mx-auto px-6 py-20 text-center">
-        <h1 class="text-5xl font-bold mb-10">اختر رحلة التيه الخاصة بك</h1>
-        
+        <h1 class="text-4xl font-bold mb-12">اختر وجهتك في تِيـه</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- باقة الوميض -->
+
             <a href="flash.html" class="package-card p-8 rounded-2xl">
-                <div class="text-4xl mb-4" style="color: #00ffcc;">?</div>
-                <h2 class="text-2xl font-bold mb-2">باقة الوميض</h2>
-                <p class="text-gray-400 mb-4">48 ساعة من الغموض الخاطف</p>
-                <div class="text-xl font-bold" style="color: #00ffcc;">SAR 3,500</div>
+                <h2 class="text-2xl font-bold mb-4" style="color: #00ffcc;">باقة الوميض</h2>
+                <p>اضغط للتفاصيل</p>
             </a>
 
-            <!-- باقة السراب -->
             <a href="mirage.html" class="package-card p-8 rounded-2xl">
-                <div class="text-4xl mb-4" style="color: #ff3366;">!!</div>
-                <h2 class="text-2xl font-bold mb-2">باقة السراب</h2>
-                <p class="text-gray-400 mb-4">7 أيام من التيه الدولي</p>
-                <div class="text-xl font-bold" style="color: #ff3366;">SAR 8,200</div>
+                <h2 class="text-2xl font-bold mb-4" style="color: #ff3366;">باقة السراب</h2>
+                <p>اضغط للتفاصيل</p>
             </a>
 
-            <!-- باقة الأسطورة -->
             <a href="legend.html" class="package-card p-8 rounded-2xl">
-                <div class="text-4xl mb-4" style="color: #ffcc00;">★</div>
-                <h2 class="text-2xl font-bold mb-2">باقة الأسطورة</h2>
-                <p class="text-gray-400 mb-4">تجربة ملكية خاصة فوق الخيال</p>
-                <div class="text-xl font-bold" style="color: #ffcc00;">SAR 25,000</div>
+                <h2 class="text-2xl font-bold mb-4" style="color: #ffcc00;">باقة الأسطورة</h2>
+                <p>اضغط للتفاصيل</p>
             </a>
+
         </div>
     </div>
-
 </body>
 </html>
