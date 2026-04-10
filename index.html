@@ -3,35 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تِيـه | TEYH</title>
+    <title>تِيـه | TEYH - إختفِ لتجد نفسك</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #000; color: #fff; font-family: sans-serif; }
-        .package-card { transition: 0.4s; border: 1px solid #333; display: block; text-decoration: none; color: inherit; }
-        .package-card:hover { transform: translateY(-10px); border-color: #fff; box-shadow: 0 0 20px rgba(255,255,255,0.1); }
+        body { background-color: #000; color: #fff; font-family: sans-serif; scroll-behavior: smooth; }
+        .hero-section { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; }
+        .package-card { transition: 0.4s; border: 1px solid #333; cursor: pointer; text-decoration: none; color: inherit; display: block; }
+        .package-card:hover { transform: translateY(-10px); border-color: #00ffcc; }
+        .btn-teyh { background-color: #00ffcc; color: #000; padding: 15px 40px; border-radius: 5px; font-weight: bold; transition: 0.3s; text-decoration: none; }
+        .btn-teyh:hover { background-color: #fff; transform: scale(1.05); }
     </style>
 </head>
 <body>
-    <div class="container mx-auto px-6 py-20 text-center">
-        <h1 class="text-4xl font-bold mb-12">اختر وجهتك في تِيـه</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            <a href="flash.html" class="package-card p-8 rounded-2xl">
-                <h2 class="text-2xl font-bold mb-4" style="color: #00ffcc;">باقة الوميض</h2>
-                <p>اضغط للتفاصيل</p>
-            </a>
+    <!-- قسم الواجهة (Hero) -->
+    <section class="hero-section text-center px-6">
+        <h1 class="text-6xl font-bold mb-6">العالم أصبح مكشوفاً..</h1>
+        <h2 class="text-4xl font-bold mb-8 text-[#00ffcc]">هل تجرؤ على التيه؟</h2>
+        <p class="text-xl text-gray-300 max-w-2xl mb-10">إعادة عنصر المفاجأة للسفر. لا تعرف أين ستبيد الليلة، لكنك ستعرف من أنت حقاً.</p>
+        <a href="#packages" class="btn-teyh">ابدأ رحلة المجهول</a>
+    </section>
 
-            <a href="mirage.html" class="package-card p-8 rounded-2xl">
-                <h2 class="text-2xl font-bold mb-4" style="color: #ff3366;">باقة السراب</h2>
-                <p>اضغط للتفاصيل</p>
-            </a>
+    <!-- قسم الصناديق (Packages) -->
+    <section id="packages" class="py-24 bg-black px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center">اختر صندوقك</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- باقة الوميض -->
+                <a href="flash.html" class="package-card p-10 rounded-xl text-center">
+                    <div class="text-4xl mb-6 text-[#00ffcc]">?</div>
+                    <h3 class="text-2xl font-bold mb-4">باقة الوميض</h3>
+                    <p class="text-gray-400 mb-6">رحلة عطلة نهاية أسبوع خاطفة. الوجهة؟ ستعرفها في صالة المغادرة.</p>
+                    <div class="text-xl font-bold">SAR 3,500</div>
+                </a>
 
-            <a href="legend.html" class="package-card p-8 rounded-2xl">
-                <h2 class="text-2xl font-bold mb-4" style="color: #ffcc00;">باقة الأسطورة</h2>
-                <p>اضغط للتفاصيل</p>
-            </a>
+                <!-- باقة السراب -->
+                <a href="mirage.html" class="package-card p-10 rounded-xl text-center">
+                    <div class="text-4xl mb-6 text-[#ff3366]">!!</div>
+                    <h3 class="text-2xl font-bold mb-4">باقة السراب</h3>
+                    <p class="text-gray-400 mb-6">رحلة دولية لمدة 7 أيام. نرسل لك صندوقاً لبيتك، لا تفتحه إلا تحت ضوء المطار.</p>
+                    <div class="text-xl font-bold">SAR 8,900</div>
+                </a>
 
+                <!-- باقة الأسطورة -->
+                <a href="legend.html" class="package-card p-10 rounded-xl text-center">
+                    <div class="text-4xl mb-6 text-[#ffcc00]">∞</div>
+                    <h3 class="text-2xl font-bold mb-4">باقة الأسطورة</h3>
+                    <p class="text-gray-400 mb-6">عش حياة شخص آخر. صيد لؤلؤ، أو راهب في جبل. تجربة عميقة بلا تواصل رقمي.</p>
+                    <div class="text-xl font-bold">+SAR 15,000</div>
+                </a>
+
+            </div>
         </div>
-    </div>
+    </section>
+
 </body>
 </html>
