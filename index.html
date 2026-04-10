@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تِيـه | TEYH - اِختفِ لتجد نفسك</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'IBM Plex Sans Arabic', sans-serif; background-color: #050505; color: #ffffff; }
+        .glitch { animation: glitch 1s linear infinite; }
+        @keyframes glitch {
+            2%, 64% { transform: translate(2px, 0) skew(0deg); }
+            4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+            62% { transform: translate(0, 0) skew(5deg); }
+        }
+        .reveal-box { border: 1px solid #333; transition: all 0.5s ease; }
+        .reveal-box:hover { border-color: #00ffcc; box-shadow: 0 0 20px rgba(0, 255, 204, 0.2); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center p-8 fixed w-full z-50 mix-blend-difference">
+        <div class="text-2xl font-bold tracking-widest tracking-tighter">تِيـه <span class="text-xs text-emerald-400 block tracking-normal">TEYH</span></div>
+        <div class="hidden md:flex gap-10 text-sm font-light">
+            <a href="#" class="hover:text-emerald-400 transition">الوجهات المجهولة</a>
+            <a href="#" class="hover:text-emerald-400 transition">الديجيتال ديتوكس</a>
+            <a href="#" class="hover:text-emerald-400 transition">كاشفي الأسرار</a>
+        </div>
+        <button class="border border-white px-6 py-2 text-sm hover:bg-white hover:text-black transition uppercase">حجز المجهول</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20 grayscale"></div>
+        <h1 class="text-5xl md:text-8xl font-bold mb-6 z-10 leading-tight">العالم أصبح مكشوفاً..<br><span class="text-emerald-400 glitch">هل تجرؤ على التِيـه؟</span></h1>
+        <p class="text-gray-400 max-w-xl z-10 text-lg font-light mb-10">إعادة عنصر المفاجأة للسفر. لا تعرف أين ستبيت الليلة، لكنك ستعرف من أنت حقاً.</p>
+        <a href="#packages" class="z-10 bg-white text-black px-12 py-4 font-bold hover:bg-emerald-400 transition duration-500">ابدأ رحلة المجهول</a>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-24 px-8 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-light mb-16 border-r-4 border-emerald-400 pr-4">اختر صندوقك</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Package 1 -->
+            <div class="reveal-box p-10 flex flex-col items-center text-center">
+                <div class="w-20 h-20 mb-8 border border-gray-700 flex items-center justify-center text-3xl">?</div>
+                <h3 class="text-xl mb-4">باقة الوميض</h3>
+                <p class="text-gray-500 text-sm mb-6">رحلة عطلة نهاية أسبوع خاطفة. الوجهة؟ ستعرفها في صالة المغادرة.</p>
+                <span class="text-emerald-400 font-mono mt-auto">3,500 SAR</span>
+            </div>
+            <!-- Package 2 -->
+            <div class="reveal-box p-10 flex flex-col items-center text-center bg-zinc-900/50">
+                <div class="w-20 h-20 mb-8 border border-emerald-400 flex items-center justify-center text-3xl text-emerald-400">!!</div>
+                <h3 class="text-xl mb-4">باقة السراب</h3>
+                <p class="text-gray-500 text-sm mb-6">رحلة دولية لمدة 7 أيام. نرسل لك صندوقاً لبيتك، لا تفتحه إلا تحت ضوء المطار.</p>
+                <span class="text-emerald-400 font-mono mt-auto">8,900 SAR</span>
+            </div>
+            <!-- Package 3 -->
+            <div class="reveal-box p-10 flex flex-col items-center text-center">
+                <div class="w-20 h-20 mb-8 border border-gray-700 flex items-center justify-center text-3xl">∞</div>
+                <h3 class="text-xl mb-4">باقة الأسطورة</h3>
+                <p class="text-gray-500 text-sm mb-6">عيش حياة شخص آخر. صياد لؤلؤ، أو راهب في جبل. تجربة عميقة بلا تواصل رقمي.</p>
+                <span class="text-emerald-400 font-mono mt-auto">15,000 SAR+</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Detox Feature -->
+    <section class="py-24 bg-zinc-900 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 p-12">
+            <h2 class="text-4xl font-bold mb-6 italic">سلّم هاتفك.. استلم ذاكرتك.</h2>
+            <p class="text-gray-400 leading-relaxed mb-8">في رحلاتنا، الصور ليست مسؤوليتك. سيسافر معك مصور "خفي" يوثق لحظاتك العفوية بصور خام (Candid)، لتستلمها بعد عودتك ككنز من الذكريات.</p>
+            <ul class="space-y-4 text-sm text-emerald-300">
+                <li>• انقطاع تام عن الضجيج الرقمي.</li>
+                <li>• توثيق سينمائي احترافي.</li>
+                <li>• عودة للحواس الخمس.</li>
+            </ul>
+        </div>
+        <div class="md:w-1/2 h-96 bg-[url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80')] bg-cover bg-center grayscale hover:grayscale-0 transition duration-1000"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-12 text-center border-t border-zinc-800">
+        <div class="text-xl font-bold mb-4 italic">تِيـه</div>
+        <p class="text-gray-600 text-xs tracking-[0.5em] uppercase mb-8">Stay Lost. Stay Real.</p>
+        <div class="flex justify-center gap-6 text-gray-500 text-sm">
+            <a href="#">Instagram</a>
+            <a href="#">Secret Files</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+</body>
+</html>
